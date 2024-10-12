@@ -12,8 +12,10 @@ void bisection(double a, double b){
         return;
     }
     double c;
+    int iteration = 0;
 
     while((b-a)>=TOLERANCE){
+            iteration++;
          c = (a+b)/2;
     if(fun(c)==0){
         break;
@@ -26,6 +28,7 @@ void bisection(double a, double b){
     }
     }
    cout << "The root is "<< c << endl;
+   cout << "Iteration: " << iteration << endl;
 }
 
 int main(){
