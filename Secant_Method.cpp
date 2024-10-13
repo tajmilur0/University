@@ -15,7 +15,7 @@ void Secant(double a,double b){
     do{
             iteration++;
         c= b-((fun(b)*(b-a))/(fun(b)-fun(a)));
-        if(c==0){
+        if(fun(c)==0.00){
             break;
         }
         else{
