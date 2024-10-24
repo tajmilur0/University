@@ -33,7 +33,7 @@ void bisection(double a, double b){
 
 int main(){
 
-double a = -100 , b=200;
+double a = 1 , b=2;
 
 bisection(a,b);
 
