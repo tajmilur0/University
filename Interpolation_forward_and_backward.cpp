@@ -16,6 +16,7 @@ double forwardInterpolation(double x[], double y[], int n, double xp)
     double h = x[1] - x[0]; // Step size
     double u = (xp - x[0]) / h;
 
+
     // Creating the difference table
     double diff[n][n];
     for (int i = 0; i < n; i++)
