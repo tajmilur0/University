@@ -6,9 +6,9 @@ if(n==0) return 1;
 return n*factorial(n-1);
 }
 
-double ForwardInterpolation(double x[], double y[], int n, int xp){
+double ForwardInterpolation(double x[], double y[], int n, double xp){
     double h = x[1]-x[0];
-    double p = xp - x[0]/h;
+    double p = (xp - x[0])/h;
 
     //creating the difference table
 

@@ -59,7 +59,7 @@ double backwardInterpolation(double x[], double y[], int n, double xp)
     for (int i = 1; i < n; i++)
     {
         uTerm *= (u + (i - 1));
-        result += (uTerm * diff[n - 1][i]) / factorial(i);
+        result += (uTerm * diff[n - 1-i][i]) / factorial(i);
     }
 
     return result;
@@ -82,7 +82,6 @@ int main()
     cout << "Enter the value of x to interpolate: ";
     cin >> xp;
 
-    // Decide whether to use forward or backward interpolation
     if (xp < x[0] || xp > x[n-1])
     {
         cout << "Error: Interpolation point " << xp << " is out of range!" << endl;
