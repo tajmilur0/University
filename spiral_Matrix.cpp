@@ -28,7 +28,7 @@ void Spiral(int rows,int cols,int mat[3][3]){
 
             if(left<=right)
                 for(int i=bottom;i>=top;i--){
-                    cout <<  mat[i][left]<<" ";
+                    cout <<mat[i][left]<<" ";
                 }
             left++;
                 }
